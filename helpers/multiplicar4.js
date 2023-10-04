@@ -84,7 +84,7 @@ const crearArchivo=async(base=1,hasta=5,listar=false)=>{
         if(listar){ 
              //si listar es true despliega la lista del contenido en consola
             console.log('---------------------'.green.bgBlack);
-            console.log(`|`.green.bgBlack+`    Tabla del ${base}     `.red.bgBlack);  //aplicamos propiedades de color
+            console.log(`|`.green.bgBlack+`    Tabla del ${base}     `.yellow.bgBlack);  //aplicamos propiedades de color
             console.log('---------------------'.green.bgBlack);
             
             console.log(`\n${salida}            `);
