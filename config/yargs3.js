@@ -29,7 +29,7 @@ const argv = require('yargs')   //usar la variable argv para configurar y accede
 
 .check((argv,options)=>{
     if(isNaN(argv.b && argv.h)){
-        throw 'la base tiene que ser un numero'
+        throw 'la base tiene que ser un numero y/o igual un numero para hasta '
     }
     return true
 })

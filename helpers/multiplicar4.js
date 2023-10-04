@@ -54,8 +54,7 @@ un archivo, hacer una solicitud de red o esperar un temporizador, sin bloquear e
 Para manejar resultados de funciones asíncronas, a menudo se utilizan devoluciones de llamada 
 (callbacks), promesas o, en versiones más recientes de JavaScript, async/await.
  */
-const os = require('os');
-const saltoDeLinea = os.EOL;
+
 
 const limpiarColores = (texto) => {
     // Expresión regular para eliminar los códigos de colores ANSI
@@ -67,7 +66,7 @@ const limpiarColores = (texto) => {
 
 
 
-const crearArchivo=async(base=1,hasta=5,listar=false)=>{
+const crearArchivo=async(base=1,hasta=10,listar=false)=>{
     try{
         
        
@@ -89,8 +88,6 @@ const crearArchivo=async(base=1,hasta=5,listar=false)=>{
             
             console.log(`\n${salida}            `);
           
-           
-            
         }
  
         const ruta=`salida/tabla-${base}-hasta-${hasta}.txt`;
